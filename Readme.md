@@ -9,3 +9,5 @@ A collection of fuse tools based components
    - FabSheet
 
 If you wan to use or modify the components you can just download the component from the `components` folder and add it to you [fuse tools](https://www.fusetools.com/) project.
+
+![Screenshot](preview.gif)
