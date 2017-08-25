@@ -7,7 +7,8 @@
 
     <!-- Main Fab Button -->
 	<_.FabButton />
-
+	<DropShadow ux:Name="ds" Size="5" Distance="2" Spread="0.1" Color="#ccc" Angle="90" />
+	
     <!-- Fab Option Buttons  -->
 	<_.FabItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
 	<_.FabItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
@@ -18,6 +19,7 @@
 		<Scale>
 			<Keyframe Value="0.9" Time="0.05"/>
 		</Scale>
+		<Change ds.Distance="0" />
 		<Toggle Target="clickedState" Delay="0.1"/>
 	</Clicked>
 	
