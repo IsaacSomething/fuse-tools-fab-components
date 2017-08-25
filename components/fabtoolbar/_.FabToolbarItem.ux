@@ -1,4 +1,4 @@
-<Panel ux:Class="_.FabToolbarItem" Height="70" Width="40" Opacity="0">
+<Panel ux:Class="fab.toolbarItem" Height="70" Width="40" Opacity="0">
     <string ux:Property="FabImage" />
     <Image File="{ReadProperty FabImage}" Height="75" Width="18"/> 
 </Panel>

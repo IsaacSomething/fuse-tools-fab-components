@@ -1,4 +1,4 @@
-<Panel ux:Class="_.FabFullScreen" ux:Name="fabFullScreenWrapper">
+<Panel ux:Class="fab.fullScreen" ux:Name="fabFullScreenWrapper">
 
         <Panel Margin="20" Visibility="Hidden" ux:Name="fabFullScreenMainContent">
             <!-- Content When Open 

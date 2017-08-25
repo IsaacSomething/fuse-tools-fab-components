@@ -1,4 +1,4 @@
-<Panel ux:Class="_.Fab" Alignment="TopRight" HitTestMode="LocalBounds" Margin="10">
+<Panel ux:Class="fab.standard" Alignment="TopRight" HitTestMode="LocalBounds" Margin="10">
 
 	<!-- Main Fab Item Icon -->
 	<!-- TODO: Add Rectangles to _.FabButton -->
@@ -6,13 +6,13 @@
 	<Rectangle ux:Name="fabItemVert" Color="#333"  Height="16" Width="2"> </Rectangle>
 
     <!-- Main Fab Button -->
-	<_.FabButton />
+	<fab.button />
 	<DropShadow ux:Name="ds" Size="5" Distance="2" Spread="0.1" Color="#ccc" Angle="90" />
 	
     <!-- Fab Option Buttons  -->
-	<_.FabItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
-	<_.FabItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
-	<_.FabItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" />
+	<fab.fabItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
+	<fab.fabItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
+	<fab.fabItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" />
 
 	<!-- Click Event Of Main Fab Button -->
 	<Clicked>

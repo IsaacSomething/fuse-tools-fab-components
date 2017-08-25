@@ -1,9 +1,9 @@
 <App>
 
 	
-	<_.Fab />
-	<_.FabToolbar />
-	<_.FabSheet />
-	<_.FabFullScreen />
+	<fab.standard />
+	<fab.toolbar />
+	<fab.sheet />
+	<fab.fullScreen />
 
 </App>

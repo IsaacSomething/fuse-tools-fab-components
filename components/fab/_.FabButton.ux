@@ -1,4 +1,4 @@
-<Panel ux:Class="_.FabButton">
+<Panel ux:Class="fab.button">
     <!-- Main Fab Button -->
 	<Circle Width="50" Height="50" Color="#fff" />	
 </Panel>

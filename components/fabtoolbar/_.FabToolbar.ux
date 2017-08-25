@@ -1,9 +1,9 @@
-<DockPanel ux:Class="_.FabToolbar" ux:Name="fabToolBarWrapper">
+<DockPanel ux:Class="fab.toolbar" ux:Name="fabToolBarWrapper">
     
     <StackPanel ItemSpacing="10" Orientation="Horizontal" Margin="80,0" Alignment="BottomRight">
-		<_.FabToolbarItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
-		<_.FabToolbarItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
-		<_.FabToolbarItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" />
+		<fab.toolbarItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
+		<fab.toolbarItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
+		<fab.toolbarItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" />
     </StackPanel>
 			
 	<!-- Main Fab Item Icon -->
@@ -25,7 +25,7 @@
 	<Panel HitTestMode="LocalBounds" Margin="10" Alignment="BottomRight">
 
     	<!-- Main Fab Button -->
-		<_.FabToolbarBtn ux:Name="fabToolbarBtn" />
+		<fab.toolbarBtn ux:Name="fabToolbarBtn" />
 
 		<!-- Toggle Animations -->
 		<WhileTrue ux:Name="clickedState">

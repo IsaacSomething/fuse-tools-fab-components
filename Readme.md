@@ -2,24 +2,24 @@
 
 Standard Fab: 
 ```
-<_.Fab />
+<fab.standard />
 ```
 ##### Currently Fab Items need to be positioned manually based on therequired alignment to the main Fab button.
 
 FabToolbar: 
 ```
-<_.FabToolbar />
+<fab.toolbar />
 ```
 
 ##### Currently only works for Aligment="BottomRight" or Aligment="BottomLeft" else changes to dropshadow and toolbar position needs to be changed</small>
 
 FabSheet: 
 ```
-<_.FabSheet />
+<fab.sheet />
 ```
 FabFullPage: 
 ```
-<_.FabFullScreen />
+<fab.fullScreen />
 ```
 ##### Currently only works for Aligment="Bottom" - breaking changes on main button icon
 
