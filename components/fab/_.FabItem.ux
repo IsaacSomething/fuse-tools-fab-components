@@ -1,0 +1,5 @@
+<Circle ux:Class="_.FabItem" Width="40" Height="40" Opacity="0" Color="#fff"> 
+    <string ux:Property="FabImage" />
+    <Image File="{ReadProperty FabImage}" Height="18" Width="18" /> 
+    <DropShadow Size="10" Distance="2" Spread="0.25" Color="#0008" Angle="40" />
+</Circle>

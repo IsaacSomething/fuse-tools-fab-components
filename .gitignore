@@ -1,0 +1,10 @@
+build/*
+.uno/*
+
+*.unoproj
+
+$RECYCLE.BIN/
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
