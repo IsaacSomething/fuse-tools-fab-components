@@ -1,6 +1,5 @@
 <App>
-		<_.Fab />
-		<_.FabToolbar />
-
-
+	<_.Fab />
+	<_.FabToolbar />
+	<_.FabSheet />
 </App>
