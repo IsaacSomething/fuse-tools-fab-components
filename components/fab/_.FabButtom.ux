@@ -1,0 +1,6 @@
+<Panel ux:Class="_.FabButton">
+    <!-- Main Fab Button -->
+	<Circle Width="50" Height="50" Color="#fff">
+		<DropShadow Size="5" Distance="2" Spread="0.1" Color="#ccc" Angle="90" />
+	</Circle>
+</Panel>

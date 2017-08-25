@@ -1,8 +1,6 @@
 <App>
-	<Panel Background="#333">
-	
 		<_.Fab />
 		<_.FabToolbar />
 
-	</Panel>
+
 </App>

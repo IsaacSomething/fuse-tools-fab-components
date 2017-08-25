@@ -1,18 +1,17 @@
 <Panel ux:Class="_.Fab" Alignment="TopRight" HitTestMode="LocalBounds" Margin="10">
 
 	<!-- Main Fab Item Icon -->
-	<Rectangle ux:Name="FabIconHorz" Color="#333"  Height="2" Width="16"> </Rectangle>
-	<Rectangle ux:Name="FabIconVert" Color="#333"  Height="16" Width="2"> </Rectangle>
-	
+	<!-- TODO: Add Rectangles to _.FabButton -->
+	<Rectangle ux:Name="fabItemHorz" Color="#333"  Height="2" Width="16"> </Rectangle>
+	<Rectangle ux:Name="fabItemVert" Color="#333"  Height="16" Width="2"> </Rectangle>
+
     <!-- Main Fab Button -->
-	<Circle Width="50" Height="50" Color="#fff">
-		<DropShadow Size="10" Distance="3" Spread="0.05" Color="#0008" Angle="90" />
-	</Circle>
+	<_.FabButton />
 
     <!-- Fab Option Buttons  -->
-	<_.FabItem FabImage="assets/like.png" ux:Name="fab1" />
-	<_.FabItem FabImage="assets/share.png" ux:Name="fab2" />
-	<_.FabItem FabImage="assets/funnel.png" ux:Name="fab3" />
+	<_.FabItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
+	<_.FabItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
+	<_.FabItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" />
 
 	<!-- Click Event Of Main Fab Button -->
 	<Clicked>
@@ -26,16 +25,16 @@
 	<WhileTrue ux:Name="clickedState">
 		
         <!-- Fab Button Animation -->
-        <Change fab1.Opacity="1"/>
-        <Move Target="fab1" Easing="ExponentialInOut" Y="1.4" RelativeTo="Size" Duration="0.2" Delay="0"/>
-		<Change fab2.Opacity="1"/>
-        <Move Target="fab2" Easing="ExponentialInOut" Y="2.7" RelativeTo="Size" Duration="0.2" Delay="0"/>
-		<Change fab3.Opacity="1"/>
-		<Move Target="fab3" Easing="ExponentialInOut" Y="4" RelativeTo="Size" Duration="0.2" Delay="0"/>
+        <Change fabItem1.Opacity="1"/>
+        <Move Target="fabItem1" Easing="ExponentialInOut" Y="1.4" RelativeTo="Size" Duration="0.2" Delay="0"/>
+		<Change fabItem2.Opacity="1"/>
+        <Move Target="fabItem2" Easing="ExponentialInOut" Y="2.7" RelativeTo="Size" Duration="0.2" Delay="0"/>
+		<Change fabItem3.Opacity="1"/>
+		<Move Target="fabItem3" Easing="ExponentialInOut" Y="4" RelativeTo="Size" Duration="0.2" Delay="0"/>
 
         <!-- Main Fab Icon Animation -->
-		<Rotate Target="FabIconHorz" Easing="QuadraticInOut" Degrees="45" Duration="0.1"/>
-		<Rotate Target="FabIconVert" Easing="QuadraticInOut" Degrees="-135" Duration="0.1"/>
+		<Rotate Target="fabItemHorz" Easing="QuadraticInOut" Degrees="45" Duration="0.1"/>
+		<Rotate Target="fabItemVert" Easing="QuadraticInOut" Degrees="-135" Duration="0.1"/>
 
 	</WhileTrue>
 
