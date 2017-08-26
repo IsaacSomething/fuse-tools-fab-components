@@ -4,30 +4,29 @@
 	<!-- <fab.sheet /> -->
 	<fab.fullScreen />
 
+	<Panel>
+		<!-- Fab Standard -->
+		<fab.standard Margin="20,123" Background="#ef5350" IconColor="#fff" ItemsBackground="#f3f3f3"/>
+ 	</Panel>
+	 <Panel>
+	 	<!-- Fab Sheet -->
+	 	<fab.sheet Margin="10,163" Alignment="Top"/>
+	 </Panel>
+
 	<DockPanel Alignment="Top" Margin="0,150" Width="110">
 		<Circle Height="110" Width="110" Color="#ccc" Layer="Overlay">
 			<Stroke Width="5" Color="#f3f3f3" Offset="4"/>
 		</Circle>
 	</DockPanel>
-
-	<Panel>
-		<!-- Fab Standard -->
-		<fab.standard Margin="20,123" Background="#ef5350" IconColor="#fff" ItemsBackground="#f3f3f3"/>
- 	</Panel>
 	
 	<StackPanel>
 		<Panel Background="#e53935" Height="150" Alignment="Top">			
 		</Panel>
 		<Panel Background="#f3f3f3" Height="110">
-		
 		</Panel>
 	</StackPanel>
 
-	<DockPanel Layer="Overlay">
-		<fab.sheet Margin="10,163" Dock="Top"/>
-	</DockPanel>
-
-	<ScrollView Margin="0,260,0,0">
+	<ScrollView Margin="0,260,0,0" Padding="0,20">
 		<StackPanel>
 			<preview.card />
 			<preview.card />

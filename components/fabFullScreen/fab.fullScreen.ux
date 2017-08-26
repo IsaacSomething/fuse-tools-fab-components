@@ -4,7 +4,6 @@
             <!-- Content When Open 
                  NOTE: This is not apart of the component. For preview purposes only
             -->
-            <Text Value="Main Context" Color="#fff" FontSize="30" />
         </Panel>
         
         <!-- Main Fab Icon -->
@@ -43,11 +42,11 @@
             <Move Target="extop" Easing="ExponentialInOut" Y="2.4" RelativeTo="Size" Duration="0.1" Delay="0.1" DelayBack="0.2"/>
             <Move Target="exright" Easing="ExponentialInOut" X="-2.4" RelativeTo="Size" Duration="0.1" Delay="0.1" DelayBack="0.2"/>
             
-			<Change fabFullScreenMainContent.Visibility="Visible" />
+			<Change fabFullScreenMainContent.Visibility="Visible" DelayBack="0" />
 			<Change fabFullScreenBtn.Width="1000" Easing="QuadraticInOut" Duration="0.4"  DelayBack="0" DurationBack="0.2"/>
             <Change fabFullScreenBtn.Height="1000" Easing="QuadraticInOut" Duration="0.4"  DelayBack="0" DurationBack="0.2"/>
 			<Change fabFullScreenBtn.Margin="0,0" Easing="QuadraticInOut" Duration="0"  DelayBack="0.2"/>
-			<Change fabFullScreenBtn.Color="#333" Easing="QuadraticInOut" Duration="0.2"  DelayBack="0"/>
+			<Change fabFullScreenBtn.Color="#d32f2f" Easing="QuadraticInOut" Duration="0.2"  DelayBack="0"/>
 			<Change fabFullScreenBtn.CornerRadius="0" Easing="QuadraticInOut" Duration="0.2"  DelayBack="0" DurationBack="0.6"/>
 
 		</WhileTrue>

@@ -1,3 +1,3 @@
-<Rectangle ux:Class="fab.toolbarBtn" Width="50" Height="50" Color="#fff" CornerRadius="60" >
+<Rectangle ux:Class="fab.toolbarBtn" Width="50" Height="50" Color="#e53935" CornerRadius="60" >
 	<DropShadow Size="5" Distance="2" Spread="0.1" Color="#ccc" Angle="-90" />
 </Rectangle>
