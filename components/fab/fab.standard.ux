@@ -1,25 +1,26 @@
-<Panel ux:Class="fab.standard" Alignment="TopRight" HitTestMode="LocalBounds" Margin="10">
+<Panel ux:Class="fab.standard" Alignment="TopRight" HitTestMode="LocalBounds">
+	
+	<string ux:Property="Background" />
+	<string ux:Property="IconColor" />
+	<string ux:Property="ItemsBackground" />
 
 	<!-- Main Fab Item Icon -->
-	<!-- TODO: Add Rectangles to _.FabButton -->
-	<Rectangle ux:Name="fabItemHorz" Color="#333"  Height="2" Width="16"> </Rectangle>
-	<Rectangle ux:Name="fabItemVert" Color="#333"  Height="16" Width="2"> </Rectangle>
+	<Rectangle ux:Name="fabItemHorz" Color="{ReadProperty IconColor}"  Height="2" Width="16"> </Rectangle>
+	<Rectangle ux:Name="fabItemVert" Color="{ReadProperty IconColor}"  Height="16" Width="2"> </Rectangle>
 
     <!-- Main Fab Button -->
-	<fab.button />
-	<DropShadow ux:Name="ds" Size="5" Distance="2" Spread="0.1" Color="#ccc" Angle="90" />
+	<fab.button BtnColor="{ReadProperty Background}"/>
 	
     <!-- Fab Option Buttons  -->
-	<fab.fabItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
-	<fab.fabItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
-	<fab.fabItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" />
+	<fab.fabItem FabImage="assets/images/like.png" ux:Name="fabItem1" Color="{ReadProperty ItemsBackground}"/>
+	<fab.fabItem FabImage="assets/images/share.png" ux:Name="fabItem2" Color="{ReadProperty ItemsBackground}"/>
+	<fab.fabItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" Color="{ReadProperty ItemsBackground}"/>
 
 	<!-- Click Event Of Main Fab Button -->
 	<Clicked>
 		<Scale>
 			<Keyframe Value="0.9" Time="0.05"/>
 		</Scale>
-		<Change ds.Distance="0" />
 		<Toggle Target="clickedState" Delay="0.1"/>
 	</Clicked>
 	

@@ -1,25 +1,11 @@
 <DockPanel ux:Class="fab.sheet" ux:Name="fabSheetWrapper">
     
     <StackPanel Orientation="Vertical" Margin="25,65" Alignment="BottomLeft" ux:Name="fabSheetContent" Opacity="0">
-        <!-- Content When Open 
-             NOTE: This is not apart of the component. For preview purposes only
-        -->
-        <Panel Width="150" Margin="0,12">
-            <Text TextWrapping="Wrap" FontSize="14"  Value="Did you enjoy this post? If so then like or share it" />
-        </Panel>
-        <StackPanel Orientation="Horizontal" ItemSpacing="10" Margin="0, 12"> 
-            <Image File="../../assets/images/like.png" Height="24" Width="18"/> <Text Value="Like This" />
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" ItemSpacing="10" Margin="0, 12"> 
-            <Image File="../../assets/images/share.png" Height="24" Width="18"/> <Text Value="Share This" />
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" ItemSpacing="10" Margin="0, 12"> 
-            <Image File="../../assets/images/funnel.png" Height="24" Width="18"/> <Text Value="Filter Article" />
-        </StackPanel>
+        <!-- Content When Open -->
     </StackPanel>
 			
 	<!-- Main Fab Item Icon -->
-	<Panel Margin="10" Alignment="BottomLeft">
+	<Panel Padding="10" Alignment="BottomLeft">
 		
 		<Rectangle ux:Name="fabSheetBtnIconHorz" Color="#333" Height="2" Width="16"></Rectangle>
 		<Rectangle ux:Name="fabSheetBtnIconVert" Color="#333" Height="16" Width="2"></Rectangle>
@@ -34,7 +20,7 @@
 		</Clicked>
 	</Panel>
 
-	<Panel HitTestMode="LocalBounds" Margin="10" Alignment="BottomLeft">
+	<Panel HitTestMode="LocalBounds" Padding="10" Alignment="BottomLeft">
 
     	<!-- Main Fab Button -->
 		<fab.sheetBtn ux:Name="fabSheetBtn" />

@@ -1,4 +1,5 @@
 <Panel ux:Class="fab.button">
-    <!-- Main Fab Button -->
-	<Circle Width="50" Height="50" Color="#fff" />	
+    <string ux:Property="BtnColor" />
+	<Circle Width="50" Height="50" Color="{ReadProperty BtnColor}" />	
+    <DropShadow ux:Name="ds" Size="3" Distance="3" Color="#c5c5c5" Angle="90" />
 </Panel>

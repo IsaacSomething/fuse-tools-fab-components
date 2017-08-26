@@ -1,0 +1,4 @@
+<Panel ux:Class="preview.card">
+	<Rectangle Background="#f3f3f3" Margin="20" Height="100" Padding="15,15,15,30">	
+	</Rectangle>
+</Panel>
