@@ -1,5 +1,5 @@
 <Circle ux:Class="fab.fabItem" Width="40" Height="40" Opacity="0" Color="#fff"> 
-    <string ux:Property="FabImage" />
-    <Image File="{ReadProperty FabImage}" Height="18" Width="18" /> 
+    <string ux:Property="FabIcon" />
+    <Text Font="FabIconFont" Alignment="Center" Value="{ReadProperty FabIcon}" />
     <DropShadow ux:Name="ds" Size="5" Distance="2" Color="#c5c5c5" Angle="90" />
 </Circle>

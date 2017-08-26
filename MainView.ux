@@ -1,18 +1,21 @@
 <App>
-	<!-- <fab.standard /> -->
-	<fab.toolbar />
-	<!-- <fab.sheet /> -->
+<Font File="assets/fonts/fabicons.ttf" ux:Global="FabIconFont" />
+	
+
 	<fab.fullScreen />
 
-	<Panel>
-		<!-- Fab Standard -->
-		<fab.standard Margin="20,123" Background="#ef5350" IconColor="#fff" ItemsBackground="#f3f3f3"/>
- 	</Panel>
-	 <Panel>
-	 	<!-- Fab Sheet -->
-	 	<fab.sheet Margin="10,163" Alignment="Top"/>
-	 </Panel>
+	<!-- Fab Toolbar -->
+	<fab.toolbar />
 
+	<!-- Fab Standard -->
+	<fab.standard Margin="20,123" Background="#ef5350" IconColor="#fff" ItemsBackground="#f3f3f3"/>
+ 	
+	<!-- Fab Sheet -->
+	<fab.sheet Margin="10,163" Alignment="Top"/>
+
+	<!-- _____________________________________________________________________
+	     For Preview Only
+	-->
 	<DockPanel Alignment="Top" Margin="0,150" Width="110">
 		<Circle Height="110" Width="110" Color="#ccc" Layer="Overlay">
 			<Stroke Width="5" Color="#f3f3f3" Offset="4"/>
@@ -20,10 +23,8 @@
 	</DockPanel>
 	
 	<StackPanel>
-		<Panel Background="#e53935" Height="150" Alignment="Top">			
-		</Panel>
-		<Panel Background="#f3f3f3" Height="110">
-		</Panel>
+		<Panel Background="#e53935" Height="150" Alignment="Top"></Panel>
+		<Panel Background="#f3f3f3" Height="110"></Panel>
 	</StackPanel>
 
 	<ScrollView Margin="0,260,0,0" Padding="0,20">

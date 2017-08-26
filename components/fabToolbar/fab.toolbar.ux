@@ -1,16 +1,16 @@
 <DockPanel ux:Class="fab.toolbar" ux:Name="fabToolBarWrapper">
-    
+
     <StackPanel ItemSpacing="10" Orientation="Horizontal" Margin="80,0" Alignment="BottomRight">
-		<fab.toolbarItem FabImage="assets/images/like.png" ux:Name="fabItem1" />
-		<fab.toolbarItem FabImage="assets/images/share.png" ux:Name="fabItem2" />
-		<fab.toolbarItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" />
+		<fab.toolbarItem FabIcon="&#xe877;" ux:Name="fabItem1" />
+		<fab.toolbarItem FabIcon="&#xe83a;" ux:Name="fabItem2" />
+		<fab.toolbarItem FabIcon="&#xe800;" ux:Name="fabItem3" />
     </StackPanel>
 			
 	<!-- Main Fab Item Icon -->
 	<Panel Margin="10" Alignment="BottomRight">
 		
-		<Rectangle ux:Name="fabToolbarBtnIconHorz" Color="#333" Height="2" Width="16"></Rectangle>
-		<Rectangle ux:Name="fabToolbarBtnIconVert" Color="#333" Height="16" Width="2"></Rectangle>
+		<Rectangle ux:Name="fabToolbarBtnIconHorz" Color="#fff" Height="2" Width="16"></Rectangle>
+		<Rectangle ux:Name="fabToolbarBtnIconVert" Color="#fff" Height="16" Width="2"></Rectangle>
 		
 		<!-- Psuedo Rectangle For Click Bounds -->
 		<Rectangle Height="50" Width="50" Opacity="0" Color="#ccc"></Rectangle>
@@ -20,6 +20,7 @@
 			<Toggle Target="clickedState"/>
 			<BringToFront Target="fabToolBarWrapper" />
 		</Clicked>
+		
 	</Panel>
 
 	<Panel HitTestMode="LocalBounds" Margin="10" Alignment="BottomRight">
@@ -38,7 +39,6 @@
 			<Change fabItem1.Opacity="1"  Duration="0.3" DelayBack="0" Delay="0.3"/>
 			<Change fabItem2.Opacity="1"  Duration="0.3" DelayBack="0" Delay="0.2"/>
 			<Change fabItem3.Opacity="1"  Duration="0.3" DelayBack="0" Delay="0.1"/>
-			
 
     	    <!-- Main Fab Icon Animation -->
 			<Rotate Target="fabToolbarBtnIconHorz" Easing="QuadraticInOut" Degrees="45" Duration="0.1"/>

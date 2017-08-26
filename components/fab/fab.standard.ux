@@ -12,9 +12,9 @@
 	<fab.button BtnColor="{ReadProperty Background}"/>
 	
     <!-- Fab Option Buttons  -->
-	<fab.fabItem FabImage="assets/images/like.png" ux:Name="fabItem1" Color="{ReadProperty ItemsBackground}"/>
-	<fab.fabItem FabImage="assets/images/share.png" ux:Name="fabItem2" Color="{ReadProperty ItemsBackground}"/>
-	<fab.fabItem FabImage="assets/images/funnel.png" ux:Name="fabItem3" Color="{ReadProperty ItemsBackground}"/>
+	<fab.fabItem FabIcon="&#xe877;" ux:Name="fabItem1" Color="{ReadProperty ItemsBackground}"/>
+	<fab.fabItem FabIcon="&#xe83a;" ux:Name="fabItem2" Color="{ReadProperty ItemsBackground}"/>
+	<fab.fabItem FabIcon="&#xe800;" ux:Name="fabItem3" Color="{ReadProperty ItemsBackground}"/>
 
 	<!-- Click Event Of Main Fab Button -->
 	<Clicked>
