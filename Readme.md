@@ -8,13 +8,12 @@ Input Properties
     
 `Background` : Main fab button background color
 
-`IconColor` : Main fab button Icon color
+`IconColor` : Main fab button icon color
 
 `ItemsBackground` : Background color of the sub items 
 
 ##### Notes
-- Currently Fab Items need to be positioned manually based on the required alignment to the main Fab button.
-- There is no drop shadow because i dont partically like it. ¯\\_(ツ)_/¯
+- Currently Fab Items need to be positioned manually based on the required alignment to the main Fab button
 - Need to add icon set to test sub item background color
 ----
 FabToolbar: 
@@ -37,3 +36,6 @@ FabFullPage:
 ![Screenshot](preview.gif)
 
 If you want to use or modify the components you can just download the component from the `components` folder and add it to you [fuse tools](https://www.fusetools.com/) project.
+
+
+¯\\_(ツ)_/¯
