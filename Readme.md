@@ -8,7 +8,7 @@ Component | Input Properties | Description
 Component | Input Properties | Description 
 --- | --- | --- 
 `<fab.standard />` | BtnBackground | Main fab button background color
-                   | IconColor  | Main fab button icon color 
+                  `` | IconColor  | Main fab button icon color 
                    | ItemsBackground | Background color of the sub items 
                    | ItemsIconColor | Colors for sub item icons 
 `<fab.toolbar />`  | ToolbarColor | Background color ( this will be for the button and the toolbar that becomes visible) 
