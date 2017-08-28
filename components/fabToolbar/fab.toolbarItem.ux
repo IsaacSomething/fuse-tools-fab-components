@@ -1,5 +1,5 @@
 <Panel ux:Class="fab.toolbarItem" Height="50" Width="40" Opacity="0">
     <string ux:Property="FabIcon" />
-    <string ux:Property="IconColor" />
+    <float4 ux:Property="IconColor" />
     <Text Font="FabIconFont" Alignment="Center" Value="{ReadProperty FabIcon}" Color="{ReadProperty IconColor}" FontSize="22" />
 </Panel>

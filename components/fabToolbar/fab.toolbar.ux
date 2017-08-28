@@ -2,11 +2,12 @@
 
 	<string ux:Property="ToolbarColor" />
 	<string ux:Property="IconColor" />
+	<float4 ux:Property="ItemsIconColor" />
 
     <StackPanel ItemSpacing="15" Orientation="Horizontal" Margin="80,10" Alignment="BottomRight">
-		<fab.toolbarItem FabIcon="&#xe877;" ux:Name="fabItem1" IconColor="{ReadProperty wrapper.IconColor}" />
-		<fab.toolbarItem FabIcon="&#xe83a;" ux:Name="fabItem2" IconColor="{ReadProperty wrapper.IconColor}"/>
-		<fab.toolbarItem FabIcon="&#xe800;" ux:Name="fabItem3" IconColor="{ReadProperty wrapper.IconColor}"/>
+		<fab.toolbarItem ux:Name="fabItem1" FabIcon="&#xe877;" IconColor="{ReadProperty wrapper.ItemsIconColor}" />
+		<fab.toolbarItem ux:Name="fabItem2" FabIcon="&#xe83a;" IconColor="{ReadProperty wrapper.ItemsIconColor}"/>
+		<fab.toolbarItem ux:Name="fabItem3" FabIcon="&#xe800;" IconColor="{ReadProperty wrapper.ItemsIconColor}"/>
     </StackPanel>
 			
 	<!-- Main Fab Item Icon -->

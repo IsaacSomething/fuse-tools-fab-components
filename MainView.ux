@@ -6,7 +6,7 @@
 	<fab.standard Margin="20,123" BtnBackground="#ef5350" IconColor="#fff" ItemsBackground="#fff" ItemsIconColor="#333" />
 
 	<!-- Fab Toolbar -->
-	<fab.toolbar ToolbarColor="#f44336" IconColor="#fff" />
+	<fab.toolbar ToolbarColor="#f44336" IconColor="#fff" ItemsIconColor="#333" />
 
 	<!-- Fab Fullscreen -->
 	<fab.fullScreen />

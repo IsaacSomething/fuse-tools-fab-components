@@ -34,6 +34,3 @@ Note that the `ux:Name` is referenced in the animations, and therefor ( for now 
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 If you want to use or modify the components you can just download the component from the `components` folder and add it to you [fuse tools](https://www.fusetools.com/) project.
-
-
-¯\\_(ツ)_/¯
