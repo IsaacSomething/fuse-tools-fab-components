@@ -31,9 +31,6 @@ Note that the `ux:Name` is referenced in the animations, and therefor ( for now 
 
 ![Screenshot](preview.gif)
 
-- [x] Fix bringToFront
-- [ ] Fix fullscreen icon
-- [ ] Fix alignment issues
 
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
