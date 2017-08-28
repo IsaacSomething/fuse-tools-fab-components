@@ -1,9 +1,9 @@
 #  Collection of fuse tools fab components
 
-Markdown | Less | Pretty
+Component | Input Properties | Description 
 --- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+`<fab.standard />` | BtnBackground | Main fab button background color
+1 | IconColor | Main fab button icon color
 
 Component | Input Properties | Description 
 --- | --- | --- 
