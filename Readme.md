@@ -1,18 +1,18 @@
 #  Collection of fuse tools fab components
 
 Component | Input Properties | Description 
---------- | ---------------- | ----------- 
-<fab.standard /> | BtnBackground | Main fab button background color
+--- | --- | --- 
+`<fab.standard />` | BtnBackground | Main fab button background color
                    | IconColor  | Main fab button icon color 
                    | ItemsBackground | Background color of the sub items 
                    | ItemsIconColor | Colors for sub item icons 
-<fab.toolbar />  | ToolbarColorr | Background color ( this will be for the button and the toolbar that becomes visible) 
+`<fab.toolbar />`  | ToolbarColor | Background color ( this will be for the button and the toolbar that becomes visible) 
                    | IconColor | Color for the main icon button 
                    | ItemsIconColor | Background color of toolbar icons 
-<fab.fullScreen /> | ScreenBackground | Background color ( this will be for the button and the screen that becomes visible) 
+`<fab.fullScreen />` | ScreenBackground | Background color ( this will be for the button and the screen that becomes visible) 
                    | BtnBackground | Main fab button background color 
                    | IconColor | Background color of toolbar icons 
-<fab.sheet />    | SheetBackground | Background color ( this will be for the button and the sheet that becomes visible) 
+`<fab.sheet />`    | SheetBackground | Background color ( this will be for the button and the sheet that becomes visible) 
                    | BtnBackground | Main fab button background color 
                    | IconColor  | Main fab button icon color 
 
