@@ -1,24 +1,24 @@
 <App>
-<Font File="assets/fonts/fabicons.ttf" ux:Global="FabIconFont" />
-	
 
+	<Font File="assets/fonts/fabicons.ttf" ux:Global="FabIconFont" />
+	
 	<fab.fullScreen />
 
 	<!-- Fab Toolbar -->
-	<fab.toolbar />
+	<fab.toolbar ToolbarColor="#f44336" IconColor="#fff" />
 
 	<!-- Fab Standard -->
-	<fab.standard Margin="20,123" Background="#ef5350" IconColor="#fff" ItemsBackground="#f3f3f3"/>
+	<fab.standard Margin="20,123" BtnBackground="#ef5350" IconColor="#fff" ItemsBackground="#f3f3f3" />
  	
 	<!-- Fab Sheet -->
-	<fab.sheet Margin="10,163" Alignment="Top"/>
+	<fab.sheet Margin="10,163" Alignment="Top" />
 
 	<!-- _____________________________________________________________________
 	     For Preview Only
 	-->
 	<DockPanel Alignment="Top" Margin="0,150" Width="110">
 		<Circle Height="110" Width="110" Color="#ccc" Layer="Overlay">
-			<Stroke Width="5" Color="#f3f3f3" Offset="4"/>
+			<Stroke Width="5" Color="#f3f3f3" Offset="4" />
 		</Circle>
 	</DockPanel>
 	

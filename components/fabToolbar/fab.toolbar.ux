@@ -1,40 +1,42 @@
-<DockPanel ux:Class="fab.toolbar" ux:Name="fabToolBarWrapper">
+<Panel ux:Class="fab.toolbar" ux:Name="wrapper">
 
-    <StackPanel ItemSpacing="10" Orientation="Horizontal" Margin="80,0" Alignment="BottomRight">
-		<fab.toolbarItem FabIcon="&#xe877;" ux:Name="fabItem1" />
-		<fab.toolbarItem FabIcon="&#xe83a;" ux:Name="fabItem2" />
-		<fab.toolbarItem FabIcon="&#xe800;" ux:Name="fabItem3" />
+	<string ux:Property="ToolbarColor" />
+	<string ux:Property="IconColor" />
+
+    <StackPanel ItemSpacing="15" Orientation="Horizontal" Margin="80,10" Alignment="BottomRight">
+		<fab.toolbarItem FabIcon="&#xe877;" ux:Name="fabItem1" IconColor="{ReadProperty wrapper.IconColor}" />
+		<fab.toolbarItem FabIcon="&#xe83a;" ux:Name="fabItem2" IconColor="{ReadProperty wrapper.IconColor}"/>
+		<fab.toolbarItem FabIcon="&#xe800;" ux:Name="fabItem3" IconColor="{ReadProperty wrapper.IconColor}"/>
     </StackPanel>
 			
 	<!-- Main Fab Item Icon -->
-	<Panel Margin="10" Alignment="BottomRight">
-		
-		<Rectangle ux:Name="fabToolbarBtnIconHorz" Color="#fff" Height="2" Width="16"></Rectangle>
-		<Rectangle ux:Name="fabToolbarBtnIconVert" Color="#fff" Height="16" Width="2"></Rectangle>
-		
-		<!-- Psuedo Rectangle For Click Bounds -->
-		<Rectangle Height="50" Width="50" Opacity="0" Color="#ccc"></Rectangle>
+	<Panel>
+		<Rectangle ux:Name="fabToolbarBtn" Width="50" Height="50" CornerRadius="60" Alignment="BottomRight" Margin="10">
+			<Rectangle ux:Name="fabToolbarBtnIconHorz" Color="{ReadProperty wrapper.IconColor}" Height="2" Width="16"></Rectangle>
+			<Rectangle ux:Name="fabToolbarBtnIconVert" Color="{ReadProperty wrapper.IconColor}" Height="16" Width="2"></Rectangle>
+		</Rectangle>	
+	</Panel>
+	<Clicked>
+		<Toggle Target="clickedState"/> 
+		<BringToFront Target="wrapper" />
+	</Clicked>
 
-		<!-- Click Event Of Main Fab Button -->
-		<Clicked>
-			<Toggle Target="clickedState"/>
-			<BringToFront Target="fabToolBarWrapper" />
-		</Clicked>
-		
+	<Panel Alignment="BottomRight" Margin="10">	
+		<Rectangle Height="50" Width="50" Opacity="1" CornerRadius="60" Color="{ReadProperty wrapper.ToolbarColor}" ux:Name="toolbar">
+			<DropShadow Size="5" Distance="2" Spread="0.1" Color="#ccc" Angle="-90" />
+		</Rectangle>
 	</Panel>
 
-	<Panel HitTestMode="LocalBounds" Margin="10" Alignment="BottomRight">
-
-    	<!-- Main Fab Button -->
-		<fab.toolbarBtn ux:Name="fabToolbarBtn" />
+	<Panel HitTestMode="LocalBounds" Alignment="BottomRight">
 
 		<!-- Toggle Animations -->
 		<WhileTrue ux:Name="clickedState">
 
 			<!-- Fab Button Animation -->
-			<Change fabToolbarBtn.Width="1000" Easing="ExponentialInOut" Duration="0.4" DelayBack="0" />
-			<Change fabToolbarBtn.Height="75" Easing="ExponentialInOut" Duration="0.4" DelayBack="0" />
-			<Move Target="fabToolbarBtn" Easing="ExponentialInOut" Y="0.2" RelativeTo="Size" Duration="0.2" DelayBack="0" />
+			
+			<Change toolbar.Margin="0,-10" Easing="ExponentialInOut" Duration="0.1" />
+			<Change toolbar.Width="1000" Easing="ExponentialInOut" Duration="0.3" />
+			<Change toolbar.Height="70" Easing="ExponentialInOut" Duration="0.4" />
 
 			<Change fabItem1.Opacity="1"  Duration="0.3" DelayBack="0" Delay="0.3"/>
 			<Change fabItem2.Opacity="1"  Duration="0.3" DelayBack="0" Delay="0.2"/>
@@ -47,4 +49,4 @@
 		</WhileTrue>
 	</Panel>
 
-</DockPanel>
+</Panel>

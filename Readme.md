@@ -29,9 +29,9 @@ FabSheet:
 ```
 FabFullPage: 
 ```
-<fab.fullScreen />
+<fab.fullScreen /> // ( broken )
 ```
-##### Currently only works for Aligment="Bottom" - breaking changes on main button icon
+##### Issues with bringToFront ( Cant pass {ReadProperty if root el has ux:Name )
 
 ![Screenshot](preview.gif)
 

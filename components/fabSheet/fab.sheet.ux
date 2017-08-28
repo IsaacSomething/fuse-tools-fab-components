@@ -1,4 +1,4 @@
-<DockPanel ux:Class="fab.sheet" ux:Name="fabSheetWrapper">
+<DockPanel ux:Class="fab.sheet" ux:Name="wrapper">
     
     <StackPanel Orientation="Vertical" Margin="25,65" Alignment="BottomLeft" ux:Name="fabSheetContent" Opacity="0">
         <!-- Content When Open -->
@@ -16,7 +16,7 @@
 		<!-- Click Event Of Main Fab Button -->
 		<Clicked>
 			<Toggle Target="clickedState"/>
-			<BringToFront Target="fabSheetWrapper" />
+			<BringToFront Target="wrapper" />
 		</Clicked>
 	</Panel>
 

@@ -1,21 +1,22 @@
-<Panel ux:Class="fab.fullScreen" ux:Name="fabFullScreenWrapper">
-
-        <Panel Margin="20" Visibility="Hidden" ux:Name="fabFullScreenMainContent">
-            <!-- Content When Open 
-                 NOTE: This is not apart of the component. For preview purposes only
-            -->
-        </Panel>
-        
-        <!-- Main Fab Icon -->
-        <Rectangle Color="#333" Height="2" Width="16" Alignment="BottomCenter" X="0" Y="-25" ux:Name="btm"/>
-        <Rectangle Color="#333" Height="2" Width="10" Alignment="BottomCenter" X="-3" Y="-40" ux:Name="top"/>
-        <Rectangle Color="#333" Height="16" Width="2" Alignment="BottomCenter" X="-6.5" Y="-25" ux:Name="left"/>
-        <Rectangle Color="#333" Height="10" Width="2" Alignment="BottomCenter" X="9.5" Y="-25" ux:Name="right"/>
-        <Rectangle Color="#333" Height="7" Width="2" Alignment="BottomCenter" X="11" Y="-38" ux:Name="exright"/>        
-        <Rectangle Color="#333" Height="2" Width="7" Alignment="BottomCenter" X="9" Y="-43" ux:Name="extop"/>
+<Panel ux:Class="fab.fullScreen" ux:Name="wrapper">
 
         <!-- Main Fab Button -->
         <Rectangle Width="50" Height="50" Color="#fff" CornerRadius="60" Alignment="BottomCenter" Margin="0,10" ux:Name="fabFullScreenBtn" >
+        
+            <Panel Margin="20" Visibility="Hidden" ux:Name="fabFullScreenMainContent">
+                <!-- Content When Open 
+                     NOTE: This is not apart of the component. For preview purposes only
+                -->
+            </Panel>
+
+             <!-- Main Fab Icon -->
+            <Rectangle Color="#333" Height="2" Width="16" Alignment="BottomCenter" X="0" Y="-17" ux:Name="btm"/>
+            <Rectangle Color="#333" Height="2" Width="8" Alignment="BottomCenter" X="-5" Y="-31" ux:Name="top"/>
+            <Rectangle Color="#333" Height="14" Width="2" Alignment="BottomCenter" X="-8" Y="-17" ux:Name="left"/>
+            <Rectangle Color="#333" Height="7" Width="2" Alignment="BottomCenter" X="7" Y="-17" ux:Name="right"/>
+            <Rectangle Color="#333" Height="7" Width="2" Alignment="BottomCenter" X="7" Y="-26" ux:Name="exright"/>        
+            <Rectangle Color="#333" Height="2" Width="7" Alignment="BottomCenter" X="4" Y="-31" ux:Name="extop"/>
+
         	<DropShadow Size="5" Distance="2" Spread="0.1" Color="#ccc" Angle="-90" />
         </Rectangle>
 		
@@ -23,14 +24,14 @@
 		<Rectangle Height="50" Width="50" Opacity="0" Margin="0,10" Color="Red" Alignment="BottomCenter" Layer="Overlay">
             <!-- Click Event Of Main Fab Button -->
 		    <Clicked>
-		    	<Toggle Target="clickedState"/>
-                <BringToFront Target="fabFullScreenWrapper" />
+		    	<Toggle Target="clickedState"/>    
+                <BringToFront Target="wrapper" />
 		    </Clicked>
         </Rectangle>
 
         <!-- Toggle Animations -->
 		<WhileTrue ux:Name="clickedState">
-
+            <BringToFront Target="fabFullScreenBtn" />
 			<!-- Fab Button Animation -->
             <Change top.Color="#fff" DelayBack="0.1"/>
             <Change right.Color="#fff" DelayBack="0.1"/>
