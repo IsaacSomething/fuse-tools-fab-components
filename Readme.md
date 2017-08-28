@@ -1,23 +1,23 @@
 #  Collection of fuse tools fab components
 
-Component | Input Properties | Description 
---- | --- | --- 
-`<fab.standard />` | BtnBackground | Main fab button background color
-"" | IconColor  | Main fab button icon color 
-"" | ItemsBackground | Background color of the sub items 
-"" | ItemsIconColor | Colors for sub item icons 
-`<fab.toolbar />` | ToolbarColor | Background color ( this will be for the button and the toolbar that becomes visible) 
-"" | IconColor | Color for the main icon button 
-"" | ItemsIconColor | Background color of toolbar icons 
-`<fab.fullScreen />`| ScreenBackground | Background color ( this will be for the button and the screen that becomes visible) 
-"" | BtnBackground | Main fab button background color 
-"" | IconColor | Background color of toolbar icons 
-`<fab.sheet />` | SheetBackground | Background color ( this will be for the button and the sheet that becomes visible) 
-"" | BtnBackground | Main fab button background color 
-"" | IconColor  | Main fab button icon color 
+|Component | Input Properties | Description |
+|--- | --- | --- |
+|`<fab.standard />` | BtnBackground | Main fab button background color |
+| | IconColor  | Main fab button icon color |
+| | ItemsBackground | Background color of the sub items |
+| | ItemsIconColor | Colors for sub item icons |
+`<fab.toolbar />` | ToolbarColor | Background color ( this will be for the button and the toolbar that becomes visible) |
+| | IconColor | Color for the main icon button |
+| | ItemsIconColor | Background color of toolbar icons |
+`<fab.fullScreen />`| ScreenBackground | Background color ( this will be for the button and the screen that becomes visible) |
+| | BtnBackground | Main fab button background color |
+| | IconColor | Background color of toolbar icons |
+`<fab.sheet />` | SheetBackground | Background color ( this will be for the button and the sheet that becomes visible) |
+| | BtnBackground | Main fab button background color |
+| | IconColor  | Main fab button icon color |
 
 #### Note: ( for fab.standard and fab.toolbar )
-The sub items in the fab.standard and fab.toolbar have to be manually added. Each component has its own sub component  `*.*item.ux`. The item can be added like so
+The sub items in the `fab.standard` and `fab.toolbar` have to be manually added. Each component has its own sub component  `*.*item.ux`. The item can be added like so
 
 ```
 <!-- For Standard Button -->
