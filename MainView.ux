@@ -2,14 +2,15 @@
 
 	<Font File="assets/fonts/fabicons.ttf" ux:Global="FabIconFont" />
 	
-	<fab.fullScreen />
+	<!-- Fab Standard -->
+	<fab.standard Margin="20,123" BtnBackground="#ef5350" IconColor="#fff" ItemsBackground="#fff" ItemsIconColor="#333" />
 
 	<!-- Fab Toolbar -->
 	<fab.toolbar ToolbarColor="#f44336" IconColor="#fff" />
 
-	<!-- Fab Standard -->
-	<fab.standard Margin="20,123" BtnBackground="#ef5350" IconColor="#fff" ItemsBackground="#f3f3f3" />
- 	
+	<!-- Fab Fullscreen -->
+	<fab.fullScreen />
+
 	<!-- Fab Sheet -->
 	<fab.sheet Margin="10,163" Alignment="Top" />
 
