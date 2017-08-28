@@ -6,13 +6,13 @@
 	<fab.standard Margin="20,123" BtnBackground="#ef5350" IconColor="#fff" ItemsBackground="#fff" ItemsIconColor="#333" />
 
 	<!-- Fab Toolbar -->
-	<fab.toolbar ToolbarColor="#f44336" IconColor="#fff" ItemsIconColor="#333" />
+	<fab.toolbar ToolbarColor="#f44336" IconColor="#fff" ItemsIconColor="#fff" />
 
 	<!-- Fab Fullscreen -->
-	<fab.fullScreen BtnBackground="#fff" IconColor="#333" ScreenBackground="#f44336"/>
+	<fab.fullScreen Margin="0,10" BtnBackground="#fff" IconColor="#333" ScreenBackground="#f44336"/>
 
 	<!-- Fab Sheet -->
-	<fab.sheet Margin="10,163" Alignment="Top" SheetBackground="#333" BtnBackground="#ef5350" IconColor="#fff"/>
+	<fab.sheet Margin="10,163" Alignment="Top" SheetBackground="#fff" BtnBackground="#fff" IconColor="#333"/>
 
 	<!-- _____________________________________________________________________
 	     For Preview Only
