@@ -1,14 +1,18 @@
 <DockPanel ux:Class="fab.sheet" ux:Name="wrapper">
+
+	<string ux:Property="SheetBackground" />
+	<string ux:Property="IconColor" />
+	<string ux:Property="BtnBackground" />
     
-    <StackPanel Orientation="Vertical" Margin="25,65" Alignment="BottomLeft" ux:Name="fabSheetContent" Opacity="0">
+    <StackPanel ux:Name="fabSheetContent" Orientation="Vertical" Margin="25,65" Alignment="BottomLeft" Opacity="0">
         <!-- Content When Open -->
     </StackPanel>
 			
 	<!-- Main Fab Item Icon -->
 	<Panel Padding="10" Alignment="BottomLeft">
 		
-		<Rectangle ux:Name="fabSheetBtnIconHorz" Color="#333" Height="2" Width="16"></Rectangle>
-		<Rectangle ux:Name="fabSheetBtnIconVert" Color="#333" Height="16" Width="2"></Rectangle>
+		<Rectangle ux:Name="fabSheetBtnIconHorz" Color="{ReadProperty wrapper.IconColor}" Height="2" Width="16"></Rectangle>
+		<Rectangle ux:Name="fabSheetBtnIconVert" Color="{ReadProperty wrapper.IconColor}" Height="16" Width="2"></Rectangle>
 		
 		<!-- Psuedo Rectangle For Click Bounds -->
 		<Rectangle Height="50" Width="50" Opacity="0" Color="#ccc"></Rectangle>
@@ -23,7 +27,7 @@
 	<Panel HitTestMode="LocalBounds" Padding="10" Alignment="BottomLeft">
 
     	<!-- Main Fab Button -->
-		<fab.sheetBtn ux:Name="fabSheetBtn" />
+		<fab.sheetBtn ux:Name="fabSheetBtn" Color="{ReadProperty wrapper.BtnBackground}"/>
 
 		<!-- Toggle Animations -->
 		<WhileTrue ux:Name="clickedState">
@@ -33,6 +37,7 @@
 			<Change fabSheetBtn.Height="265" Easing="ExponentialInOut" Duration="0.4" DelayBack="0" />
 			<Change fabSheetBtn.CornerRadius="0" Easing="ExponentialInOut" Duration="0.2" DelayBack="0" DurationBack="0.6" />
 			<Change fabSheetContent.Opacity="1" Easing="ExponentialInOut" Duration="0.6" DelayBack="0" DurationBack="0.3" />
+			<Change fabSheetBtn.Color="{ReadProperty wrapper.SheetBackground}" Easing="ExponentialInOut" Duration="0.6" DelayBack="0" DurationBack="0.3" />
 
     	    <!-- Main Fab Icon Animation -->
 			<Rotate Target="fabSheetBtnIconHorz" Easing="QuadraticInOut" Degrees="45" Duration="0.1" DelayBack="0"/>
